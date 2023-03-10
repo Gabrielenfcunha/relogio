@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom,rgb(51, 176, 128),rgb(53, 134, 210)); 
+}
+#conteiner{
+  display: flex;
+  gap: 40px;
+  color: #fff;
+}
+#conteiner .titac{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#conteiner .titac svg{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+#conteiner .titac svg circle{
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke:none;
+  stroke-width: 4;
+  transform: translate(5px ,5px);
+}
+#conteiner .titac svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+}
+#conteiner div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+font-size: 1.5em;
+}
+#conteiner div span{
+  position: absolute;
+  transform: translate(-50%);
+  font-size: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#conteiner .ap{
+  position: relative;
+  font: 1em;
+  transform: translateX(-20px);
+}
+
+.dorts{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+.dorts::before{
+  content: '';
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--clr);
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="relogio.css">
+  <title>Relogio</title>
+</head>
+<body>
+  <div id="conteiner">
+    <div class="titac" style="--clr:#55CDE6">
+     <div class="dorts hrs"></div>
+      <svg> 
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="hr"></circle>
+      </svg>
+      <div id="horas">00</div> 
+    </div>
+    <div class="titac" style="--clr:#A09FFF;">
+      <div class="dorts mis"></div>
+      <svg> 
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="ms"></circle>
+      </svg>
+      <div id="min">00</div>
+    </div>
+    <div class="titac" style="--clr:#23D9C0;">
+      <div class="dorts sec"></div>
+      <svg> 
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70" id="sg"></circle>
+      </svg>
+      <div id="seg">00</div>
+    </div>
+    <div class="ap">
+      <div id="ampm">AM</div>
+    </div>
+  </div>
+  <script src="relogio.js"></script>
+</body>
+</html>
