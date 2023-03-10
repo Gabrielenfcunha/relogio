@@ -17,8 +17,8 @@ let  sec =document.querySelector('.sec')
   let s = new Date().getSeconds();
   let am = h >= 12 ? "PM" : "AM";
   
-  if (h > 12){
-    h = h - 12;
+  if (h > 24){
+    h = h - 24;
   }
   
   h = (h < 10) ? "0" + h : h;
